@@ -4,7 +4,7 @@
 
 #apt-get update -y
 
-apt-get install curl
+apt-get install -y curl
 
 apt-get install $minimal_apt_get_args $HBASE_BUILD_PACKAGES
 

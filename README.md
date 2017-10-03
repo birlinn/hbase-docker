@@ -1,7 +1,7 @@
 HBase in Docker
 ===============
 
-This configuration builds a docker container to run HBase (with
+This configuration builds a docker container to run HBase 2 (with
 embedded Zookeeper) running on the files inside the container.
 
 NOTE
@@ -19,7 +19,7 @@ but this hasn't been fixed yet.
 Build Image
 -----------
 
-    $ docker build -t dajobe/hbase .
+    $ docker build -t birlinn/hbase2 .
 
 
 Pull image
@@ -27,9 +27,9 @@ Pull image
 
 If you want to pull the image already built then use this
 
-    $ docker pull dajobe/hbase
+    $ docker pull birlinn/hbase2
 
-More details at https://hub.docker.com/r/dajobe/hbase/
+More details at https://hub.docker.com/r/birlinn/hbase2/
 
 
 Run HBase
@@ -38,7 +38,7 @@ Run HBase
 To run HBase by hand:
 
     $ mkdir data
-    $ id=$(docker run --name=hbase-docker -h hbase-docker -d -v $PWD/data:/data dajobe/hbase)
+    $ id=$(docker run --name=hbase-docker -h hbase-docker -d -v $PWD/data:/data birlinn/hbase)
 
 To run it and adjust the host system's locally by editing
 `/etc/hosts` to alias the DNS hostname 'hbase-docker' to the

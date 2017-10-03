@@ -2,9 +2,7 @@
 
 . /build/config-hbase.sh
 
-apt-get update -y
-
-apt-get install $minimal_apt_get_args $HBASE_BUILD_PACKAGES
+apt-get update && apt-get install $minimal_apt_get_args $HBASE_BUILD_PACKAGES $HBASE_RUN_PACKAGES
 
 cd /opt
 

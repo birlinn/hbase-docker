@@ -13,7 +13,7 @@ export INITRD=no
 export DEBIAN_FRONTEND=noninteractive
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
-minimal_apt_get_args='-y --no-install-recommends'
+minimal_apt_get_args='-y -qq'
 
 
 ## Build time dependencies ##

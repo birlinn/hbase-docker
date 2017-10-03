@@ -1,15 +1,15 @@
-# HBase in Docker
+# HBase 2 in Docker
 #
-# Version 0.3
+# Version 0.0
 
 # http://docs.docker.io/en/latest/use/builder/
 
 FROM ubuntu:xenial
-MAINTAINER Dave Beckett <dave@dajobe.org>
+MAINTAINER Birlinn <birlinn@gmail.com>
 
 COPY *.sh /build/
 
-ENV HBASE_VERSION 1.2.4
+ENV HBASE_VERSION 2.0.0-alpha-3
 
 RUN /build/prepare-hbase.sh && \
     cd /opt/hbase && /build/build-hbase.sh \

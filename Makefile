@@ -1,4 +1,4 @@
-IMAGE_NAME=dajobe/hbase
+IMAGE_NAME=birlinn/hbase2
 IMAGE_TAG=latest
 
 HBASE_VERSION=$(shell awk '/^ENV HBASE_VERSION/ {print $3}' Dockerfile)
